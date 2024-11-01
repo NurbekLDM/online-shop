@@ -201,12 +201,12 @@ export default function DashboardHome() {
 
                 </Card>
 
-                <Card title="Orders" style={{width: '300px', height: '160px', marginLeft: '2%', borderRadius: '10px'}}>
+                <Card title="Profit" style={{width: '300px', height: '160px', marginLeft: '2%', borderRadius: '10px'}}>
                     <div style={{display: 'flex', flexDirection: 'row', marginTop: '-10px'}}>
-                        <p style={{fontSize: '20px'}}>35k $</p>
+                        <p style={{fontSize: '20px'}}>350k $</p>
                         <p style={{color: 'green', fontSize: '15px', marginLeft: '55%', marginTop: '6px'}}>
                             <i style={{fontSize: '12px', paddingRight: '2px'}} className='pi pi-arrow-up'></i>
-                            25%</p>
+                            45%</p>
                     </div>
 
                     <Stack
@@ -219,7 +219,7 @@ export default function DashboardHome() {
                                         min: 0,
                                         max: 100,
                                     }}
-                                    colors={['red']}
+                                    colors={['green']}
                                     {...settings}
                                 />
                             </Box>
