@@ -230,11 +230,21 @@ export default function DashboardHome() {
 
             </div>
 
-            <div style={{width: '50%', marginLeft: '12%'}} className="card">
-                <Carousel value={products} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions}
-                          className="custom-carousel" circular
-                          autoplayInterval={3000} itemTemplate={productTemplate}/>
+            <div style={{display: 'flex', flexDirection: 'row', marginTop: '-10px'}}>
+                <div style={{width: '50%', marginLeft: '12%'}} className="card">
+                    <h1 style={{marginTop: '30px', marginLeft: '220px', fontSize: '30px'}}>Products</h1>
+                    <Carousel value={products} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions}
+                              className="custom-carousel" circular
+                              autoplayInterval={3000} itemTemplate={productTemplate}/>
 
+                </div>
+                <div style={{width: '40%', marginLeft: '2%'}} className="card">
+                    <h1 style={{marginTop: '30px', marginLeft: '130px', fontSize: '30px'}}>Canceled products</h1>
+                    <Carousel value={products} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions}
+                              className="custom-carousel" circular
+                              autoplayInterval={3000} itemTemplate={productTemplate}/>
+
+                </div>
             </div>
             <div style={{marginLeft: '200px'}}>
                 <Map/>
