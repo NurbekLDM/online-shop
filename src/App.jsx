@@ -33,7 +33,7 @@ const routes = [
     {path: "/register", element: <SignUp/>},
     {path: "/productDetails", element: <ProductDetails/>},
     {path: "/profile", element: <Profile/>},
-    {path: "/checkout", element: localStorage.getItem('token') ? <Checkout/> : <Navigate to="/login"/>},
+    {path: "/checkout", element: <Checkout/>},
 ];
 
 
